@@ -42,10 +42,14 @@ const element1 = <div tabIndex="0"></div>;
 const element2 = <img src={user.avatarUrl}></img>;
 
 // JSX防注入攻击，可以直接使用input让用户输入
-const title = response.potentiallyMaliciousInput;
+// const title = response.potentiallyMaliciousInput;
 // 直接使用是安全的：
 const element3 = <h1>{title}</h1>;
 
+/*
+通过ReactDOM.render()方法将React元素渲染到根DOM节点中。
+React元素被创建后都是不可变的，无法改变其内容或属性。
+*/
 ReactDOM.render(
     element,
     document.getElementById('root')
