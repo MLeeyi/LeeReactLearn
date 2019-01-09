@@ -1,4 +1,4 @@
-# React教程
+# React笔记
 
 ## 学习顺序
 
@@ -8,9 +8,9 @@
 
 [状态和生命周期](#state)
 
-[处理事件]
+[处理事件](#event)
 
-[条件渲染]
+[条件渲染](#conditional)
 
 [列表和键]
 
@@ -61,3 +61,20 @@ class Welcome extends React.Component {
 ### <a name="state"></a>状态和生命周期
 
 例子见`state.js` 和 `setState.js`。
+
+### <a name="event"></a>事件处理
+
+例子见`event.js`。
+
+向事件处理程序传递参数的两种方法：
+
+```
+//箭头函数
+<button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
+//构造函数绑定this
+<button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+```
+
+### <a name="conditional"></a>条件渲染
+
+例子见`conditional.js`。
