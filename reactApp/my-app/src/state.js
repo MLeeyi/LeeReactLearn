@@ -1,12 +1,13 @@
 /*
  * 使用state的方式实现UI的渲染更新
- * 1.使用state替代props；
+ * 1.使用state替代props，state和props类似，但它是私有的，且由组件本身完全控制；
  * 2.添加一个类的构造函数，初始化状态,使用super关键字传递props到基础构造函数；
  * 3.类组件应始终使用props调用基础构造函数；
  * 4.将生命周期方法添加到类中；
  */
 
 class Clock extends React.Component {
+    // 类构造函数constructor初始化this.state
     constructor(props){
         super(props);
         this.state = {date: new Date()};

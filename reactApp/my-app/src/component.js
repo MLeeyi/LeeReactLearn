@@ -124,3 +124,5 @@ function Comment(props) {
         </div>
     );
 }
+
+// 所有 React 组件都必须是纯函数，即：同样的输入始终得到相同结果，并禁止修改其自身 props 。

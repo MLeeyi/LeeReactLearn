@@ -24,7 +24,7 @@ const user = {
     lastName: 'Perez'
 };
 
-// 推荐在JSX代码外加上小括号
+// 推荐在JSX代码外加上小括号，可以分为多行显示
 const element = (
     <div>
         <h1>
